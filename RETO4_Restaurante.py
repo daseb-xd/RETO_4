@@ -187,9 +187,9 @@ class CashPayment(Payment):
             print(f"Paid {amount:.2f} in cash. Change: {(self.amount_given - amount):.2f}")
         else:
             print(f"Not enough cash provided. Amount due: {(amount - self.amount_given):.2f}")
-
+#Usage case
 if __name__ == "__main__":
-    # Usage case
+
     order = Order([
         Appetizer("Empanadas", 3.50),
         Appetizer("Cheese Sticks", 4.00),
